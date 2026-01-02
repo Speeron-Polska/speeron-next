@@ -18,7 +18,7 @@ Speeron NEXT enables hotels to deliver personalized, automated guest experiences
 The platform supports multiple hotel properties with intelligent tenant resolution, allowing seamless operations across hotel chains and independent properties. Each hotel maintains its own configuration while benefiting from shared infrastructure.
 
 ### PMS Integration
-Deep integration with Property Management Systems (PMS) including Mews, enabling real-time synchronization of bookings, guest data, and room availability. The platform supports various PMS adapters for flexible hotel system connectivity.
+Deep integration with Property Management Systems (PMS), enabling real-time synchronization of bookings, guest data, and room availability. The platform supports various PMS adapters for flexible hotel system connectivity.
 
 ### Payment Processing
 Comprehensive payment solutions supporting multiple payment methods, including credit cards, digital wallets, and online payment gateways. Secure transaction processing with PCI compliance considerations.
