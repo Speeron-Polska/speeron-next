@@ -539,34 +539,13 @@ The check-in tool integrates with Speeron's booking search system to:
 
 ## Security and Compliance
 
-### Rate Limiting
-- **Per-Session Limits**: 5 requests per minute with burst allowance of 3
-- **Per-Tenant Limits**: 100 requests per minute across all sessions
-- **Distinct Booking ID Limits**: 3 per session per minute, 10 per session per hour
-- **Negative Result Caching**: 90-second TTL for failed booking searches to prevent abuse
+The server implements multiple layers of security to protect against abuse and ensure reliable service:
 
-### Exponential Backoff
-- Multi-level failure tracking with automatic blocking
-- Tenant-level blocking after 8+ failures (15-minute block)
-- Specific-level blocking for tenant+lastName combinations (60-minute block)
-- Global tenant failure threshold protection (300 failures in 10 seconds triggers 60-minute block)
-- Per-tenant rate limit failure threshold (80 failures in 30 minutes triggers 60-minute block)
-
-### Cool-Off Mechanism
-Progressive cool-off periods (10s, 30s, 2m, 10m) applied at multiple levels:
-- Session ID
-- Tenant ID
-- Tenant + Last Name
-- Tenant + Booking ID Prefix
-
-### Step-Up Authentication
-- Automatically triggers after 3 distinct booking ID attempts in a session
-- Requires additional discriminator (arrival date) for enhanced security
-
-### CORS Configuration
-- Configured for browser-based authentication flows
-- Environment-specific origin restrictions
-- Support for credentials in cross-origin requests
+- Rate Limiting
+- Exponential Backoff
+- Cool-Off Mechanism
+- Step-Up Authentication
+- CORS Configuration
 
 ## 5. Error Handling
 
