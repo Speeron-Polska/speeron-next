@@ -59,11 +59,7 @@ The platform serves as the foundation for Speeron's digital hospitality ecosyste
 **Transport:** Streamable HTTP (JSON-RPC and Server-Sent Events)  
 **Framework:** .NET 9.0 with ASP.NET Core
 
-## Brief Description (Subtitle)
-
-Hotel check-in and room booking
-
-## Extended Description (50-100 words)
+##  Description
 
 The Speeron NEXT MCP server provides hotel guest services through natural language interactions. It offers automated check-in link generation by searching bookings with booking ID and guest last name, supporting multi-tenant hotel properties with intelligent tenant resolution. The server also provides room availability search with multiple pricing options and booking confirmation capabilities, seamlessly integrating hotel operations into conversational experiences.
 
